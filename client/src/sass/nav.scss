@@ -1,0 +1,120 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+.nav{
+    &bar{
+        background-color: $purple-500;
+
+        &-nav {
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            & .nav-link.active{
+                color: white;
+                font-size: large;
+                &:hover{
+                    color: white;
+                }
+                &:visted{
+                    color: red;
+                }
+            }
+        }
+    
+        &-brand{
+            color: white;
+            &:hover{
+                color: white;
+            }
+            &:visited{
+                color: white;
+            }
+        }
+
+        &-collapse{
+            position: absolute;
+        }
+
+        &-toggler{
+            box-sizing: border-box;
+            height: 100%;
+            color: $indigo-200;
+            border: white 3px solid;
+
+            &:hover{
+                background-color: white;
+                box-sizing: border-box;
+            }
+
+            & .bi-list{
+                color:white;
+
+                &:hover{
+                    color: $indigo-200;
+                }
+            }
+        }
+
+        &-container{
+            padding: 2vh 1vw;
+        }
+    }
+
+    &-item{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        color: white;
+    }
+
+    &-link{
+        color: $indigo-200;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        
+        &:hover{
+            color: white;
+            background-color: $indigo-200;
+        }  
+        &:visited{
+            color: $indigo-200;
+        }
+    }
+}
+
+@media (max-width: 575px){
+
+    .nav{
+        &bar{
+            &-collapse{
+                width: 100%;
+                margin-top: 1vw;
+                position: relative
+            }
+
+            &-nav{
+                width: 100%;
+
+            }
+
+            &-container{
+                padding: 2vh 1vw;
+                width: 100%;
+            }
+        }
+    
+        &-item{
+            width: 100%;
+            
+        }
+    
+        &-link{
+            width: 100%;
+            padding-right: 1vh;
+            padding-left: 1vh;
+        }
+
+    }
+    
+}

@@ -1,0 +1,16 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+.form-control {
+    min-width: 50vw;
+    max-width: 500px;
+}
+
+#btn-form{
+    color: white;
+    font-weight: 20pt;
+    background-color: $indigo-300;
+    &:hover{
+        color: $indigo-300;
+        background-color: white;
+    } 
+}
