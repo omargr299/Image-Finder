@@ -1,0 +1,19 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import './form.scss';
+@import './cardscontainer.scss';
+@import './card.scss';
+@import './nav.scss';
+
+h1{
+    color: $indigo-300;
+    font-weight: 30px;
+}
+
+.h1{
+    &:focus{
+        color: white;
+    }
+}
+
+
+

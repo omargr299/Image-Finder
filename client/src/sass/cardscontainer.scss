@@ -1,0 +1,21 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+.card{
+    max-width: 300px;
+    min-width: 250px; 
+    max-height: 300px; 
+    min-height: 250px;
+
+    &-section{
+        width: 95%;
+    }
+ 
+    &-container{
+        display: inline-flex;
+        justify-content: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}
+
